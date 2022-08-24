@@ -1,9 +1,9 @@
-const overskrift = document.querySelector("h1");
+// const overskrift = document.querySelector("h1");
 
-//ØVELSE 2B udskift tekstindhold med innerHTML og textContent//
-overskrift.textContent;
-console.log(overskrift.textContent);
-overskrift.textContent = "Billeder"; //Gør at du kan redigerer i tekstcontent gennem js
+// //ØVELSE 2B udskift tekstindhold med innerHTML og textContent//
+// overskrift.textContent;
+// console.log(overskrift.textContent);
+// overskrift.textContent = "Billeder"; //Gør at du kan redigerer i tekstcontent gennem js
 
 const underoverskrift = document.querySelector("h2");
 console.log(underoverskrift);
@@ -30,3 +30,14 @@ const pic2 = document.querySelector("article:nth-child(2) img");
 console.log(pic2);
 pic2.src = "randombillede2.jpg";
 pic1.alt = "greyscale_pic2";
+
+//ØVELSE 4 - brug af createElement//
+let mainSection = document.querySelector("section");
+
+let newArticle = document.createElement("article"); //Ny article element tilføjes
+let overskrift = document.createElement("h3"); // H3 tilføjes
+let overskriftText = document.createTextNode("Article 3"); // Brødttekst tilføjes
+overskrift.appendChild(overskriftText);
+newArticle.appendChild(overskrift);
+
+mainSection.appendChild(newArticle); //appendChild betyder at man tilføjer et ekstra barn. I dette tilfælde tilføjes der nu et ekstra child (article) til section.
