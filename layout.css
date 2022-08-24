@@ -19,10 +19,8 @@ h1 {
   border: 1px solid black;
 }
 
-img {
+img + p {
+    font-weight: bold;
     max-width: 100%;
 }
-/* 
-@media (min-width: 450px) {
 
-} */
