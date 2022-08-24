@@ -8,3 +8,5 @@ const tekst = document.querySelector("p");
 console.log(tekst);
 const footer = document.querySelector("footer");
 console.log(footer);
+
+

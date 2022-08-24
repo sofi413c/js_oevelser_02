@@ -19,8 +19,16 @@ h1 {
   border: 1px solid black;
 }
 
-img + p {
-    font-weight: bold;
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
+/* ØVELSE 2A*/
+
+article:nth-child(1) {
+  color: red;
+}
+
+article:first-of-type + article {
+  color: blue;
+}
